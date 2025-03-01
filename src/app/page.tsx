@@ -1,6 +1,5 @@
-import { api, HydrateClient } from "~/trpc/server";
+import { HydrateClient } from "~/trpc/server";
 import LandingPage from "./LandingPage";
-import { useSession } from "next-auth/react";
 
 
 export default async function Home() {
