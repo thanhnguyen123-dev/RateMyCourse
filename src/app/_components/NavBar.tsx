@@ -10,11 +10,11 @@ const NavBar = () => {
   }
 
   return (
-    <div className="flex w-full justify-between items-center sticky top-0 border py-4 px-6 border-gray-200 z-1000">
+    <div className="flex w-full justify-between items-center sticky top-0 border py-4 px-8 border-gray-200 z-1000">
       <div className="flex items-center">
         <span className="text-4xl font-bold text-orange-400">RateMyCourse</span>
       </div>
-      <div className="flex items-center gap-8">
+      <div className="flex items-center gap-12">
         <div
           role="button"
           onClick={handleClickHome}
