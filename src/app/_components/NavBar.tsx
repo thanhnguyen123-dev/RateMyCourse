@@ -14,23 +14,23 @@ const NavBar = () => {
       <div className="flex items-center">
         <span className="text-4xl font-bold text-orange-400">RateMyCourse</span>
       </div>
-      <div className="flex items-center gap-12">
+      <div className="flex items-center gap-12 text-lg text-slate-600">
         <div
           role="button"
           onClick={handleClickHome}
-          className="text-lg font-semibold"
+          className="font-semibold"
         >
           Home
         </div>
         <div
           role="button"
-          className="text-lg font-semibold"
+          className="font-semibold"
         >
           Courses
         </div>
         <div
           role="button"
-          className="text-lg font-semibold"
+          className="font-semibold"
         >
           About
         </div>
