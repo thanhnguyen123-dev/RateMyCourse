@@ -12,7 +12,7 @@ const HeroSection = () => {
       </div>
       <HomeSearchBar />
       <InteractiveHoverButton>Explore courses</InteractiveHoverButton>
-      <WordRotate words={["Search", "Review", "Comment"]} />
+      <WordRotate words={["Search courses", "Add ratings", "Leave comments"]} />
     </div>
   )
 }
