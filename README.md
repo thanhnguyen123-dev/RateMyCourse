@@ -1,6 +1,6 @@
 # RateMyCourse
 
-You all-in-one social platform for ANU students to browse available courses, rate and review courses.
+Your all-in-one social platform for ANU students to browse available courses, rate and review courses.
 
 ## Tech Stack
 - **Front-end**: [Next.js](https://nextjs.org)
