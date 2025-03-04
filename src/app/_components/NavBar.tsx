@@ -3,8 +3,6 @@
 import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
 import Avatar from "./ui/Avatar";
-import Loader from "./ui/Loader";
-
 
 const NavBar = () => {
   const router = useRouter();

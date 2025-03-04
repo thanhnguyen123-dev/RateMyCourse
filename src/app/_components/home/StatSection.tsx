@@ -16,7 +16,7 @@ const StatSection = () => {
   return (
     <div className={`flex ${!session ? "justify-between" : "justify-center"} items-center w-[65%]`}>
       <div className="flex justfiy-between items-center gap-20">
-        <StatTicket value={500} label="ANU Courses" />
+        <StatTicket value={2942} label="ANU Courses" />
         <StatTicket value={20} label="Disciplines" />
         <StatTicket value={5} label="Colleges" />
       </div>
