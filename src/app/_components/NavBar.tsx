@@ -1,12 +1,25 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import { useSession } from "next-auth/react";
+import Avatar from "./ui/Avatar";
+import Loader from "./ui/Loader";
+
 
 const NavBar = () => {
   const router = useRouter();
+  const { data: session } = useSession();
 
   const handleClickHome = () => {
     router.push("/");
+  }
+
+  const handleClickSignIn = () => {
+    router.push("/signin");
+  }
+
+  const handleClickCourses = () => {
+    router.push("/courses");
   }
 
   return (
@@ -22,6 +35,7 @@ const NavBar = () => {
         <div
           role="button"
           className="font-semibold"
+          onClick={handleClickCourses}
         >
           Courses
         </div>
@@ -31,12 +45,17 @@ const NavBar = () => {
         >
           Terms and Conditions
         </div>
-        <div
-          role="button"
-          className="font-semibold"
-        >
-          Sign up
-        </div>
+        { !session ? (
+            <div
+            role="button"
+            className="font-semibold"
+            onClick={handleClickSignIn}
+          >
+            Sign in
+          </div>
+        ) : (
+          <Avatar />
+        )}
       </div>
     </div>
   );

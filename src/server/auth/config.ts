@@ -56,6 +56,9 @@ export const authConfig: NextAuthOptions = {
         id: user.id,
       },
     }),
+    redirect: async () => {
+      return "/";
+    }
   },
   secret: process.env.NEXTAUTH_SECRET,
   pages: {
